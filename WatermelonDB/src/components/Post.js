@@ -1,23 +1,24 @@
-import React, {Component} from 'react';
-import {Text, FlatList} from 'react-native';
-import withObservables from '@nozbe/with-observables';
+import React, { Component } from "react";
+import { Text, FlatList } from "react-native";
+import withObservables from "@nozbe/with-observables";
 
-import Comment from './Comment';
-import styles from './helpers/styles';
-import prompt from './helpers/prompt';
-import Button from './helpers/Button';
-import {extractId} from '../utils';
+import { extractId } from "../utils";
 
-const renderComment = ({item}) => <Comment comment={item} key={item.id} />;
+import Comment from "./Comment";
+import styles from "./helpers/styles";
+import prompt from "./helpers/prompt";
+import Button from "./helpers/Button";
+
+const renderComment = ({ item }) => <Comment comment={item} key={item.id} />;
 
 class Post extends Component {
   addComment = async () => {
-    const comment = await prompt('Write a comment');
+    const comment = await prompt("Write a comment");
     await this.props.post.addComment(comment);
   };
 
   render() {
-    const {post, comments} = this.props;
+    const { post, comments } = this.props;
     return (
       <FlatList
         style={styles.marginContainer}
@@ -44,7 +45,7 @@ class Post extends Component {
   }
 }
 
-const enhance = withObservables(['route'], ({route}) => ({
+const enhance = withObservables(["route"], ({ route }) => ({
   post: route.params.post.observe(),
   comments: route.params.post.comments.observe(),
 }));

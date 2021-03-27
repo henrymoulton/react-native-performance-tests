@@ -1,14 +1,15 @@
-import React from 'react';
-import {FlatList, Text} from 'react-native';
-import withObservables from '@nozbe/with-observables';
+import React from "react";
+import { FlatList, Text } from "react-native";
+import withObservables from "@nozbe/with-observables";
 
-import Comment from './Comment';
-import styles from './helpers/styles';
-import {extractId} from '../utils';
+import { extractId } from "../utils";
 
-const renderComment = ({item}) => <Comment comment={item} key={item.id} />;
+import Comment from "./Comment";
+import styles from "./helpers/styles";
 
-const ModerationQueue = ({blog, nastyComments}) => (
+const renderComment = ({ item }) => <Comment comment={item} key={item.id} />;
+
+const ModerationQueue = ({ blog, nastyComments }) => (
   <FlatList
     ListHeaderComponent={() => (
       <>
@@ -24,7 +25,7 @@ const ModerationQueue = ({blog, nastyComments}) => (
   />
 );
 
-const enhance = withObservables(['route'], ({route}) => ({
+const enhance = withObservables(["route"], ({ route }) => ({
   blog: route.params.blog.observe(),
   nastyComments: route.params.blog.nastyComments.observe(),
 }));
