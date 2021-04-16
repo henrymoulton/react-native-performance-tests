@@ -1,4 +1,4 @@
-# react-native-performance
+# react-native-performance-tests
 
 ## Good Resources
 
