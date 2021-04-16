@@ -7,6 +7,14 @@
 - [Performance Guide by Callstack](https://callstack.com/data/The_Ultimate_Guide_to_React_Native_Optimization_Ebook-Callstack_FINAL.pdf)
 - [Extreme Optimization of AsyncStorage by Sendbird](https://medium.com/@Sendbird/extreme-optimization-of-asyncstorage-in-react-native-b2a1e0107b34)
 - [Optimizing React Native by Coinbase](https://blog.coinbase.com/optimizing-react-native-7e7bf7ac3a34)
+- [Tips on profiling memory by Software Mansion](https://blog.swmansion.com/hunting-js-memory-leaks-in-react-native-apps-bd73807d0fde)
+
+## Libraries to check out
+
+- https://github.com/oblador/react-native-performance
+- https://github.com/Kudo/react-native-js-benchmark
+- https://github.com/Kudo/react-native-cli-plugin-benchmark
+
 
 ### 0.63
 
