@@ -14,7 +14,7 @@
 - https://github.com/oblador/react-native-performance
 - https://github.com/Kudo/react-native-js-benchmark
 - https://github.com/Kudo/react-native-cli-plugin-benchmark
-
+- https://github.com/mrousavy/react-native-mmkv/blob/master/example/src/Benchmarks.ts
 
 ### 0.63
 
