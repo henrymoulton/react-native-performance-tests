@@ -8,6 +8,8 @@
 - [Extreme Optimization of AsyncStorage by Sendbird](https://medium.com/@Sendbird/extreme-optimization-of-asyncstorage-in-react-native-b2a1e0107b34)
 - [Optimizing React Native by Coinbase](https://blog.coinbase.com/optimizing-react-native-7e7bf7ac3a34)
 - [Tips on profiling memory by Software Mansion](https://blog.swmansion.com/hunting-js-memory-leaks-in-react-native-apps-bd73807d0fde)
+- [How To Make Your React Native App More Performant?](https://aditya01.hashnode.dev/how-to-make-your-react-native-app-more-performant)
+
 
 ## Libraries to check out
 
