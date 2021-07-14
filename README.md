@@ -17,6 +17,8 @@
 - https://github.com/Kudo/react-native-js-benchmark
 - https://github.com/Kudo/react-native-cli-plugin-benchmark
 - https://github.com/mrousavy/react-native-mmkv/blob/master/example/src/Benchmarks.ts
+- https://github.com/doomsower/react-native-startup-time
+- https://github.com/kirillzyusko/react-native-bundle-splitter
 
 ### 0.63
 
